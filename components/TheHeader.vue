@@ -86,7 +86,7 @@
 
 <style>
 .custom-navbar {
-  background-color: hsl(211, 100%, 15%);
+  background-color: hsl(200, 100%, 15%);
   height: 120px;
 }
 

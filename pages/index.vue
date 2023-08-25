@@ -88,7 +88,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px;
   background-color: hsl(214, 59.4%, 15.3%);
 }
 .card {

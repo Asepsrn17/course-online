@@ -1,118 +1,63 @@
 <template>
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+  <div>
+    <b-navbar toggleable="lg" type="dark" variant="info" style="height: 120px">
+      <b-navbar-nav style="margin-left: 0;">
+        <b-nav-item>
+          <b-img
+            src="~@/static/icon.jpg"
+            alt="Ikon"
+            width="100"
+            height="100"
+          ></b-img>
+        </b-nav-item>
+      </b-navbar-nav>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav style="margin-left: 50px">
+        <b-navbar-nav style="margin: 10px 0 10px 0">
+          <b-nav-item-dropdown center>
+            <template #button-content>
+              <em class="user-text">Daftar Kursus</em>
+            </template>
+            <b-dropdown-item href="#">JavaScript</b-dropdown-item>
+            <b-dropdown-item href="#">Golang</b-dropdown-item>
+          </b-nav-item-dropdown>
+
+          <b-nav-item-dropdown center>
+            <template #button-content>
+              <em class="user-text">Kategori</em>
+            </template>
+            <b-dropdown-item href="#">Beginner</b-dropdown-item>
+            <b-dropdown-item href="#">Intermediate</b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-navbar-nav>
+
+        <b-navbar-nav class="ml-auto">
+          <b-nav-form>
+            <b-form-input
+              size="sm"
+              class="mr-sm-2"
+              placeholder="Search"
+            ></b-form-input>
+            <b-button size="sm" class="my-2 my-sm-0" type="submit"
+              >Search</b-button
             >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+          </b-nav-form>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+  </div>
 </template>
 
-<script>
-</script>
-
 <style>
-.custom-navbar {
-  background-color: hsl(200, 100%, 15%);
-  height: 120px;
+.user-text {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 30px;
 }
-
-.custom-navbar .navbar-brand {
-  color: white;
+.user-text:hover {
+  font-size: 18px;
 }
-
-.custom-navbar .navbar-nav .nav-link {
-  color: white;
-}
-
-.custom-navbar .navbar-toggler-icon {
-  background-color: white;
-}
-
-.custom-navbar .navbar-toggler {
-  border-color: white;
-}
-
-.custom-navbar .form-control {
-  background-color: white;
-  color: hsl(211, 100%, 15%);
-}
-
-.custom-navbar .btn-outline-success {
-  border-color: white;
-  color: white;
-}
-</style>>
+</style>

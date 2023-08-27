@@ -1,12 +1,10 @@
 <template>
-  <footer
-    class="text-center text-lg-start bg-light text-muted"
-    style="margin-top: 50px"
+  <div class="footer text-center text-lg-start bg-light text-muted"
   >
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-3">
+    <section class="" style="background-color: hsl(211, 100%, 15%); color: white;">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
             <h6 class="text-uppercase fw-bold mb-4">
               <i class="fas fa-gem me-3"></i>Profil
             </h6>
@@ -18,7 +16,7 @@
             </p>
           </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-3">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
             <h6 class="text-uppercase fw-bold mb-4">Products</h6>
             <p>
               <a href="#!" class="text-reset">JavaScript</a>
@@ -37,7 +35,7 @@
             </p>
           </div>
 
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-3">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5">
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
             <p>
               <i class="fas fa-home me-3"></i> Jalan Lempeung, Cikajang Garut
@@ -56,10 +54,13 @@
 
     <div
       class="text-center p-4"
-      style="background-color: hsl(211, 100%, 15%); color: white"
+      style="background-color: hsl(200, 100%, 15%); color: white;"
     >
       © 2023 Created By:
       <a class="text-reset fw-bold" href="#">Asep Suryana</a>
     </div>
-  </footer>
+  </div>
 </template>
+
+<style>
+</style>

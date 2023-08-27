@@ -28,12 +28,13 @@
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
-        <b-navbar-nav class="ml-auto" style="margin-right: 400px;">
+        <b-navbar-nav class="ml-auto" style="margin-right: 300px;">
           <b-nav-form>
             <b-form-input
               size="sm"
               class="mr-lg-2"
               placeholder="Search"
+              style="width: 400px;"
             ></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit"
               >Search</b-button

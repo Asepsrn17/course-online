@@ -1,15 +1,10 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info" style="height: 120px">
-      <b-navbar-nav style="margin-left: 0;">
-        <b-nav-item>
-          <b-img
-            src="~@/static/icon.jpg"
-            alt="Ikon"
-            width="100"
-            height="100"
-          ></b-img>
-        </b-nav-item>
+      <b-navbar-nav>
+        <b-col md="6" class="mb-3">
+        <b-icon icon="star-fill" animation="fade" font-scale="4"></b-icon>
+    </b-col>
       </b-navbar-nav>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -33,11 +28,11 @@
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-auto" style="margin-right: 400px;">
           <b-nav-form>
             <b-form-input
               size="sm"
-              class="mr-sm-2"
+              class="mr-lg-2"
               placeholder="Search"
             ></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit"
@@ -49,6 +44,18 @@
     </b-navbar>
   </div>
 </template>
+
+<script>
+  import { BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
+
+export default {
+  components: {
+    BIcon,
+    BIconArrowUp,
+    BIconArrowDown
+  },
+}
+</script>
 
 <style>
 .user-text {

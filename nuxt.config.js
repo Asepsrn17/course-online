@@ -12,7 +12,7 @@ export default {
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' }
     ],
     scripts: [
-      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', body: true }
+      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' }
     ]
   },
 
@@ -42,6 +42,10 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa'
   ],
+  
+  bootstrapVue: {
+    icons: true
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

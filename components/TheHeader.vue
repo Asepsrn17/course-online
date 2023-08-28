@@ -3,8 +3,8 @@
     <b-navbar toggleable="lg" type="dark" variant="info" style="height: 120px">
       <b-navbar-nav>
         <b-col md="6" class="mb-3">
-        <b-icon icon="star-fill" animation="fade" font-scale="4"></b-icon>
-    </b-col>
+          <b-icon icon="star-fill" animation="fade" font-scale="4"></b-icon>
+        </b-col>
       </b-navbar-nav>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -28,26 +28,27 @@
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
-        <b-navbar-nav class="ml-auto" style="margin-right: 300px;">
+        <b-navbar-nav class="ml-auto" style="margin-right: 50px;">
           <b-nav-form>
-            <b-form-input
-              size="sm"
-              class="mr-lg-2"
-              placeholder="Search"
-              style="width: 400px;"
-            ></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >Search</b-button
-            >
+            <b-form-input size="sm" class="mr-lg-2" placeholder="apa yang ingin dipelajari ?" style="width: 400px;"></b-form-input>
+            <b-button size="sm" class="my-2 my-sm-0" type="submit">cari</b-button>
           </b-nav-form>
+          <b-nav-item-dropdown right>
+            <template #button-content>
+              <em class="user-text" style="margin-left: 100px;">Masuk/Daftar</em>
+            </template>
+            <b-dropdown-item href="#">Masuk</b-dropdown-item>
+            <b-dropdown-item href="#">Daftar</b-dropdown-item>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
+
     </b-navbar>
   </div>
 </template>
 
 <script>
-  import { BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
+import { BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
 
 export default {
   components: {
@@ -65,6 +66,7 @@ export default {
   color: #fff;
   margin-left: 30px;
 }
+
 .user-text:hover {
   font-size: 18px;
 }

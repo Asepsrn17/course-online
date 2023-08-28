@@ -28,21 +28,21 @@
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
-        <b-navbar-nav class="ml-auto" style="margin-right: 50px;">
-          <b-nav-form>
-            <b-form-input size="sm" class="mr-lg-2" placeholder="apa yang ingin dipelajari ?" style="width: 400px;"></b-form-input>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-form style="margin-right: 120px;">
+            <b-form-input size="sm" class="mr-lg-2" placeholder="apa yang ingin dipelajari ?"
+              style="width: 400px;"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit">cari</b-button>
           </b-nav-form>
-          <b-nav-item-dropdown right>
+          <b-nav-item-dropdown right style="background-color: hsl(200, 91%, 32%); width: 80px; margin-right: 50px;">
             <template #button-content>
-              <em class="user-text" style="margin-left: 100px;">Masuk/Daftar</em>
+              <em class="user-text-login">Masuk</em>
             </template>
             <b-dropdown-item href="#">Masuk</b-dropdown-item>
             <b-dropdown-item href="#">Daftar</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
-
     </b-navbar>
   </div>
 </template>
@@ -65,6 +65,18 @@ export default {
   font-size: 16px;
   color: #fff;
   margin-left: 30px;
+}
+
+.user-text-login {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 6px;
+}
+
+.user-text-login:hover {
+  font-weight: bold;
+  font-size: medium;
 }
 
 .user-text:hover {

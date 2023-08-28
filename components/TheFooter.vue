@@ -4,6 +4,14 @@
     <section class="" style="background-color: hsl(211, 100%, 15%); color: white;">
       <div class="container text-center text-md-start">
         <div class="row">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Profil
+            </h6>
+            <p class="text-profile">
+              Menjelajahi dunia melalui mata seorang pemikir dan penulis kode. Percaya bahwa setiap momen adalah peluang untuk belajar dan tumbuh. Hidup adalah petualangan tak terduga, dan saya siap menulis kode-kode berikutnya dengan rasa ingin tahu yang tiada henti.
+            </p>
+          </div>
 
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
             <h6 class="text-uppercase fw-bold mb-4">Products</h6>
@@ -21,15 +29,6 @@
             </p>
             <p>
               <a href="#!" class="text-reset">React</a>
-            </p>
-          </div>
-
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Profil
-            </h6>
-            <p>
-              "Menjelajahi dunia melalui mata seorang pemikir dan penulis kode. Percaya bahwa setiap momen adalah peluang untuk belajar dan tumbuh. Menyukai tantangan baru dan selalu bersemangat untuk merangkul perubahan. Mengutamakan empati dalam setiap interaksi, karena percaya bahwa kita semua memiliki cerita yang berharga. Sebuah jiwa penjelajah dengan hati yang tertanam dalam nilai-nilai keluarga dan persahabatan. Hidup adalah petualangan tak terduga, dan saya siap menulis kode-kode berikutnya dengan rasa ingin tahu yang tiada henti."
             </p>
           </div>
 
@@ -61,4 +60,10 @@
 </template>
 
 <style>
+/* .text-profile {
+    text-align: justify;
+    max-width: 250px; 
+    margin-left: auto;
+    margin-right: auto;
+} */
 </style>

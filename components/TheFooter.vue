@@ -1,6 +1,5 @@
 <template>
-  <div class="footer text-center text-lg-start bg-light text-muted"
-  >
+  <div class="footer text-center text-lg-start bg-light text-muted">
     <section class="" style="background-color: hsl(211, 100%, 15%); color: white;">
       <div class="container text-center text-md-start">
         <div class="row">
@@ -9,7 +8,9 @@
               <i class="fas fa-gem me-3"></i>Profil
             </h6>
             <p class="text-profile">
-              Menjelajahi dunia melalui mata seorang pemikir dan penulis kode. Percaya bahwa setiap momen adalah peluang untuk belajar dan tumbuh. Hidup adalah petualangan tak terduga, dan saya siap menulis kode-kode berikutnya dengan rasa ingin tahu yang tiada henti.
+              Menjelajahi dunia melalui mata seorang pemikir dan penulis kode. Percaya bahwa setiap momen adalah peluang
+              untuk belajar dan tumbuh. Hidup adalah petualangan tak terduga, dan saya siap menulis kode-kode berikutnya
+              dengan rasa ingin tahu yang tiada henti.
             </p>
           </div>
 
@@ -49,21 +50,11 @@
       </div>
     </section>
 
-    <div
-      class="text-center p-4"
-      style="background-color: hsl(200, 100%, 15%); color: white;"
-    >
+    <div class="text-center p-4" style="background-color: hsl(200, 100%, 15%); color: white;">
       © 2023 Created By:
       <a class="text-reset fw-bold" href="#">Asep Suryana</a>
     </div>
   </div>
 </template>
 
-<style>
-/* .text-profile {
-    text-align: justify;
-    max-width: 250px; 
-    margin-left: auto;
-    margin-right: auto;
-} */
-</style>
+<style></style>

@@ -5,7 +5,7 @@
         <div class="card-body">
           <h5 class="card-title">JavaScript Dasar</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/js2.jpg" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/jsdasar.jpg" alt="Image 1"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. hghgdvgd
@@ -25,7 +25,7 @@
         <div class="card-body">
           <h5 class="card-title">JavaScript Intermediate</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" fluid src="../asset/js.jpg" alt="Image 1"></b-img>
+          <b-img class="image-body" fluid src="../asset/jsdasar.jpg" alt="Image 1"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -43,7 +43,7 @@
         <div class="card-body">
           <h5 class="card-title">Golang Basic</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/golangweb.png" alt="Golang"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -58,7 +58,7 @@
         <div class="card-body">
           <h5 class="card-title">React Js</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/react.jpg" alt="Image 1"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -73,7 +73,7 @@
         <div class="card-body">
           <h5 class="card-title">Nuxt Js</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/nuxt.png" alt="Image 1"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita
@@ -98,12 +98,10 @@
   margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   max-height: 6rem;
-  /* line-height: 1.5em; */
   height: 35rem;
 }
 
@@ -118,7 +116,6 @@
 
 .container-card {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   background-color: hsl(200, 100%, 15%);
 }
@@ -128,16 +125,13 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   background-color: hsl(200, 100%, 15%);
   padding-bottom: 40px;
 }
 
 .card {
   background-color: white;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'); */
   background-size: cover;
-  /* Untuk menyesuaikan gambar dengan area */
   background-repeat: no-repeat;
   width: 25rem;
   height: 35rem;
@@ -149,14 +143,12 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   flex-grow: 1;
 }
 
 .card-links {
   align-items: center;
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 10px;
 }
 

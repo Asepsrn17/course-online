@@ -5,7 +5,7 @@
         <div class="card-body">
           <h5 class="card-title">JavaScript Dasar</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/jsdasar.jpg" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/jsdasar.jpg" alt="javascript"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. hghgdvgd
@@ -14,10 +14,13 @@
             similique et pariatur laboriosam recusandae dolorem numquam ut nihil? Explicabo dolor tempora obcaecati dicta
             pariatur voluptate?
           </p>
-          <div class="card-links">
-            <a href="#" class="card-left">70 Pelajaran</a>
-            <a href="#" class="card-right">Mulai belajar</a>
-          </div>
+        </div>
+        <div class="card-links">
+          <p class="card-left">5 Pelajaran</p>
+          <p class="card-right">5 Pelajaran</p>
+        </div>
+        <div class="button-container">
+          <b-button block variant="primary" class="button-card">Selengkapnya</b-button>
         </div>
       </div>
 
@@ -25,7 +28,7 @@
         <div class="card-body">
           <h5 class="card-title">JavaScript Intermediate</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" fluid src="../asset/jsdasar.jpg" alt="Image 1"></b-img>
+          <b-img class="image-body" fluid src="../asset/jsdasar.jpg" alt="javascript"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -33,10 +36,13 @@
             possimus minus magni impedit et accusantium, quo cum consequuntur animi necessitatibus fugit earum maxime eum
             magnam.
           </p>
-          <div class="card-links">
-            <a href="#" class="card-left">100 Pelajaran</a>
-            <a href="#" class="card-right">Mulai belajar</a>
-          </div>
+        </div>
+        <div class="card-links">
+          <p class="card-left">100 Pelajaran</p>
+          <p class="card-right">Mulai belajar</p>
+        </div>
+        <div class="button-container">
+          <b-button block variant="primary" class="button-card">Selengkapnya</b-button>
         </div>
       </div>
       <div class="card">
@@ -48,42 +54,51 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <div class="card-links">
-            <a href="#" class="card-left">5 Pelajaran</a>
-            <a href="#" class="card-right">Mulai belajar</a>
-          </div>
+        </div>
+        <div class="card-links">
+          <p class="card-left">5 Pelajaran</p>
+          <p class="card-right">Mulai belajar</p>
+        </div>
+        <div class="button-container">
+          <b-button block variant="primary" class="button-card">Selengkapnya</b-button>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">React Js</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/react.jpg" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/react.jpg" alt="react"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <div class="card-links">
-            <a href="#" class="card-left">11 Pelajaran</a>
-            <a href="#" class="card-right">Mulai belajar</a>
-          </div>
+        </div>
+        <div class="card-links">
+          <p class="card-left">50 Pelajaran</p>
+          <p class="card-right">Mulai belajar</p>
+        </div>
+        <div class="button-container">
+          <b-button block variant="primary" class="button-card">Selengkapnya</b-button>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Nuxt Js</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/nuxt.png" alt="Image 1"></b-img>
+          <b-img class="image-body" thumbnail fluid src="../asset/nuxt.png" alt="nuxt"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita
             magnam ab quae, aliquam est iure corrupti quibusdam deserunt quas? Unde recusandae tenetur dolorum nulla! Quos
             ut vel quis dolor!
           </p>
-          <div class="card-links">
-            <a href="#" class="card-left">11 Pelajaran</a>
-            <a href="#" class="card-right">Mulai belajar</a>
-          </div>
+        </div>
+        <div class="card-links">
+          <p class="card-left">11 Pelajaran</p>
+          <p class="card-right">Mulai belajar</p>
+        </div>
+        <div class="button-container">
+          <b-button block variant="primary" class="button-card">Selengkapnya</b-button>
         </div>
       </div>
     </div>
@@ -94,6 +109,22 @@
 </script>
 
 <style>
+.button-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.button-container {
+  margin-top: auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 .card-text {
   margin-top: 10px;
   overflow: hidden;
@@ -137,7 +168,7 @@
   height: 35rem;
   margin: 50px 10px 30px 10px;
   border: 3px solid hsl(200, 91%, 13%);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .card-body {
@@ -147,18 +178,28 @@
 }
 
 .card-links {
-  align-items: center;
   display: flex;
-  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .card-left {
-  margin-left: 60px;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px;
+  margin-right: 40px;
 }
 
 .card-right {
-  margin-left: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px;
+  margin-left: 40px;
 }
 
 .card-subtitle {

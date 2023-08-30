@@ -202,7 +202,13 @@
   margin-left: 40px;
 }
 
+.card-title {
+  font-weight: bold;
+}
+
 .card-subtitle {
   font-size: 14px;
+  /* color: red; */
+  font-style: italic;
 }
 </style>

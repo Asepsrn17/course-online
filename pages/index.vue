@@ -5,7 +5,7 @@
         <div class="card-body">
           <h5 class="card-title">JavaScript Dasar</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/jsdasar.jpg" alt="javascript"></b-img>
+          <b-img class="image-body" thumbnail fluid src="~/assets/jsdasar.jpg" alt="javascript"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. hghgdvgd
@@ -27,8 +27,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">JavaScript Intermediate</h5>
-          <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" fluid src="../asset/jsdasar.jpg" alt="javascript"></b-img>
+          <h6 class="card-subtitle mb-3 text-body-secondary">Rp.200.000</h6>
+          <b-img class="image-body" fluid src="~/assets/jsdasar.jpg" alt="javascript"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -49,7 +49,7 @@
         <div class="card-body">
           <h5 class="card-title">Golang Basic</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/golangweb.png" alt="Golang"></b-img>
+          <b-img class="image-body" thumbnail fluid src="~/assets/golangweb.png" alt="Golang"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -66,8 +66,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">React Js</h5>
-          <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/react.jpg" alt="react"></b-img>
+          <h6 class="card-subtitle mb-3 text-body-secondary">Rp.300.000</h6>
+          <b-img class="image-body" thumbnail fluid src="~/assets/react.jpg" alt="react"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -85,7 +85,7 @@
         <div class="card-body">
           <h5 class="card-title">Nuxt Js</h5>
           <h6 class="card-subtitle mb-3 text-body-secondary">Gratis</h6>
-          <b-img class="image-body" thumbnail fluid src="../asset/nuxt.png" alt="nuxt"></b-img>
+          <b-img class="image-body" thumbnail fluid src="~/assets/nuxt.png" alt="nuxt"></b-img>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita
@@ -167,7 +167,7 @@
   width: 25rem;
   height: 35rem;
   margin: 50px 10px 30px 10px;
-  border: 3px solid hsl(200, 91%, 13%);
+  border: 3px double hsl(200, 91%, 13%);
   border-radius: 10px;
 }
 
@@ -208,7 +208,10 @@
 
 .card-subtitle {
   font-size: 14px;
-  /* color: red; */
+  color: red;
   font-style: italic;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>

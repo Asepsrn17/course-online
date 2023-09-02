@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info" style="height: 120px">
+    <b-navbar toggleable="lg" type="dark" variant="info" style="height: 120px;">
       <b-navbar-nav>
         <b-col md="6" class="mb-3">
           <b-icon icon="star-fill" animation="fade" font-scale="4"></b-icon>
@@ -9,7 +9,7 @@
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav style="margin-left: 50px">
+      <b-collapse id="nav-collapse" is-nav style="padding-left: 50px">
         <b-navbar-nav style="margin: 10px 0 10px 0">
           <b-nav-item-dropdown center>
             <template #button-content>

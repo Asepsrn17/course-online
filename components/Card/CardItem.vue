@@ -71,7 +71,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     width: 25rem;
-    height: 35rem;
+    height: 33rem;
     margin: 50px 10px 30px 10px;
     border: 3px double hsl(200, 91%, 13%);
     border-radius: 10px;

@@ -11,26 +11,27 @@
         <b-navbar-nav style="margin: 10px 0 10px 0">
           <b-nav-item-dropdown center>
             <template #button-content>
-              <em class="user-text">Daftar Kursus</em>
+              <em class="user-text">Informasi</em>
             </template>
-            <b-dropdown-item href="#">JavaScript</b-dropdown-item>
-            <b-dropdown-item href="#">Golang</b-dropdown-item>
+            <b-dropdown-item href="#">Tentang</b-dropdown-item>
+            <b-dropdown-item href="#">Layanan</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown center>
             <template #button-content>
               <em class="user-text">Kategori</em>
             </template>
-            <b-dropdown-item href="#">Beginner</b-dropdown-item>
-            <b-dropdown-item href="#">Intermediate</b-dropdown-item>
+            <b-dropdown-item @click="updateCategory('all')">Semua</b-dropdown-item>
+            <b-dropdown-item @click="updateCategory('beginner')">Beginner</b-dropdown-item>
+            <b-dropdown-item @click="updateCategory('intermediate')">Intermediate</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-nav-form style="margin-right: 120px;" @submit.prevent="submitSearch">
+          <b-nav-form style="margin-right: 120px;">
             <b-form-input size="sm" class="mr-lg-2" v-model="searchQuery" @input="updateSearchQuery"
-              placeholder="apa yang ingin dipelajari ?" style="width: 400px;"></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit">cari</b-button>
+              placeholder="apa yang ingin dipelajari ?" style="width: 400px;">
+            </b-form-input>
           </b-nav-form>
           <b-nav-item-dropdown right style="background-color: hsl(200, 91%, 32%); width: 80px; margin-right: 50px;">
             <template #button-content>
@@ -60,10 +61,12 @@ export default {
   methods: {
     submitSearch() {
       this.$emit('search', this.searchQuery);
-      this.searchQuery = "";
     },
     updateSearchQuery(value) {
       this.$emit('update-search', value)
+    },
+    updateCategory(value) {
+      this.$emit('category', value)
     }
   }
 }

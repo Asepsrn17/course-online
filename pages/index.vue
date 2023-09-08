@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <TheHeader :searchQuery="searchQuery" @search="handleSearch" @update-search="updateSearch" />
+    <TheHeader :searchQuery="searchQuery" @search="handleSearch" @update-search="updateSearch"
+      @category="updateCategory" />
     <div class="container-card">
       <div class="container-card-body">
         <CardItem v-for="(course, index) in filteredCourses" :key="index" :course="course" />
@@ -31,7 +32,7 @@ export default {
           image: require('@/assets/jsdasar.jpg'),
           price: 'free',
           jumlahPelajaran: '5 pelajaran',
-          category: 'intermediate',
+          category: 'beginner',
         },
         {
           title: 'React Js',
@@ -55,16 +56,20 @@ export default {
           price: 'free',
           image: require('@/assets/golangweb.png'),
           jumlahPelajaran: '5 pelajaran',
-          category: 'intermediate',
+          category: 'beginner',
         },
 
       ],
       searchQuery: '',
+      selectedCategory: 'all',
     }
   },
   methods: {
-    handleSearch(query) {
-      this.searchQuery = query;
+    updateCategory(category) {
+      this.selectedCategory = category;
+    },
+    handleSearch(event) {
+      this.searchQuery = event.target.value;
     },
     updateSearch(value) {
       this.searchQuery = value;
@@ -72,15 +77,22 @@ export default {
   },
   computed: {
     filteredCourses() {
-      if (!this.searchQuery) {
-        return this.courses;
+      let filtered = this.courses;
+
+      if (this.selectedCategory !== 'all') {
+        filtered = filtered.filter((item) => {
+          return item.category === this.selectedCategory;
+        });
       }
 
-      const sanitizedQuery = this.searchQuery.toLowerCase().replace(/\s+/g, '');
-      return this.courses.filter((item) => {
-        const sanitizedTitle = item.title.toLowerCase().replace(/\s+/g, '');
-        return sanitizedTitle.includes(sanitizedQuery);
-      });
+      if (this.searchQuery) {
+        const sanitizedQuery = this.searchQuery.toLowerCase().replace(/\s+/g, '');
+        filtered = filtered.filter((item) => {
+          const sanitizedTitle = item.title.toLowerCase().replace(/\s+/g, '');
+          return sanitizedTitle.includes(sanitizedQuery);
+        });
+      }
+      return filtered;
     },
   },
 }
@@ -103,7 +115,8 @@ export default {
 }
 
 h5 {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   color: white;
 }
 </style>

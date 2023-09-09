@@ -13,8 +13,8 @@
             <template #button-content>
               <em class="user-text">Informasi</em>
             </template>
-            <b-dropdown-item href="#">Tentang</b-dropdown-item>
-            <b-dropdown-item href="#">Layanan</b-dropdown-item>
+            <b-dropdown-item href="about">Tentang Course</b-dropdown-item>
+            <b-dropdown-item href="blog">Blog</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown center>
@@ -28,20 +28,17 @@
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-nav-form style="margin-right: 120px;">
+          <b-nav-form class="mr-5">
             <b-form-input size="sm" class="mr-lg-2" v-model="searchQuery" @input="updateSearchQuery"
               placeholder="apa yang ingin dipelajari ?" style="width: 400px;">
             </b-form-input>
           </b-nav-form>
-          <b-nav-item-dropdown right style="background-color: hsl(200, 91%, 32%); width: 80px; margin-right: 50px;">
-            <template #button-content>
-              <em class="user-text-login">Masuk</em>
-            </template>
-            <b-dropdown-item href="#">Masuk</b-dropdown-item>
-            <b-dropdown-item href="#">Daftar</b-dropdown-item>
-          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
+      <div class="mr-4">
+        <b-button href="register" pill class="mr-3">Daftar</b-button>
+        <b-button href="login" pill variant="primary">Masuk</b-button>
+      </div>
     </b-navbar>
   </div>
 </template>
@@ -74,7 +71,6 @@ export default {
 
 <style>
 b-nav-item-dropdown:hover {
-  /* Atur gaya saat elemen dihover di sini */
   background-color: white;
 }
 

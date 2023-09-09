@@ -4,7 +4,7 @@
       @category="updateCategory" />
     <div class="container-card">
       <div class="container-card-body">
-        <CardItem v-for="(course, index) in filteredCourses" :key="index" :course="course" />
+        <CardItem v-for="(course, index) in filteredCourses" :course="course" :key="index" />
         <h5 v-if="filteredCourses.length === 0">Kursus tidak ditemukan</h5>
       </div>
     </div>

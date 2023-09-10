@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row main-content bg-success text-center">
             <div class="col-md-4 text-center company__info">
-                <h4 class="company_title">Your Company Logo</h4>
+                <h4 class="company_title"></h4>
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
                 <div class="container-fluid">
